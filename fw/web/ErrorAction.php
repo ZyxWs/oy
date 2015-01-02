@@ -51,10 +51,10 @@ class ErrorAction extends \yii\web\ErrorAction
             $name .= " (#$code)";
         }
 
-        if (!YII_DEBUG || $this->forceExpose === true) {
-            $message = $this->defaultMessage ?: $name;
-        } else {
+        if (YII_DEBUG || $this->forceExpose === true) {
             $message = $exception->getMessage();
+        } else {
+            $message = $this->defaultMessage ?: $name;
         }
 
         if (Yii::$app->getRequest()->getIsAjax()) {
