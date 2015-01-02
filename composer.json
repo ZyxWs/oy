@@ -1,0 +1,22 @@
+{
+    "name": "zyx/oy",
+    "type": "yii2-extension",
+    "description": "Overrides of some Yii2 core classes",
+    "keywords": ["yii2", "extension", "override"],
+    "homepage": "https://github.com/ZyxWs/oy",
+    "license": "BSD 3-Clause",
+    "authors": [
+        {
+          "name": "Serge Postrash aka SDKiller",
+          "email": "jexy.ru@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "zyx\\oy\\": ""
+        }
+    }
+}
