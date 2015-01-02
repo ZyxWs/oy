@@ -4,9 +4,10 @@ oy
 Overrides of some Yii2 core classes
 -----------------------------------
 
-Unsatisfied PRs, come `won't fix` issues or just useful tweaks.
+Unsatisfied PRs, some `won't fix` issues or just useful short-hands and tweaks.
 
 *Disclaimer:* If you find it useful - use it on your own!
+
 
 Add the following to your root `composer.json`:
 
