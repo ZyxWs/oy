@@ -51,7 +51,7 @@ class ErrorAction extends \yii\web\ErrorAction
             $name .= " (#$code)";
         }
 
-        if (!YII_DEBUG && $this->forceExpose !== true) {
+        if (!YII_DEBUG || $this->forceExpose === true) {
             $message = $this->defaultMessage ?: $name;
         } else {
             $message = $exception->getMessage();
