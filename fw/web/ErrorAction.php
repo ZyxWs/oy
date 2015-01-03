@@ -1,7 +1,8 @@
 <?php
 /**
+ * @author      Serge Postrash aka SDKiller <jexy.ru@gmail.com>
  * @link https://github.com/ZyxWs/oy
- * @copyright Copyright (c) 2014 Serge Postrash aka SDKiller
+ * @copyright Copyright (c) 2014 Serge Postrash
  * @license BSD 3-Clause, see LICENSE.md
  */
 
@@ -16,12 +17,12 @@ use yii\web\HttpException;
  * This override prevents exposure of sensitive information in production environment.
  * @see https://github.com/yiisoft/yii2/issues/6723
  *
- * @package zyx\oy\fw\web
+ * @package zyx\oy
  */
 class ErrorAction extends \yii\web\ErrorAction
 {
     /**
-     * @var bool if to force exposing sensitive information regardless of environment.
+     * @var bool If to force exposing sensitive information regardless of environment
      */
     public $forceExpose = false;
 
