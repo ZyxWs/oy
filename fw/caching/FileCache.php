@@ -1,9 +1,9 @@
 <?php
 /**
  * @author      Serge Postrash aka SDKiller <jexy.ru@gmail.com>
- * @link https://github.com/ZyxWs/oy
- * @copyright Copyright (c) 2014 Serge Postrash
- * @license BSD 3-Clause, see LICENSE.md
+ * @link        https://github.com/ZyxWs/oy
+ * @copyright   Copyright (c) 2014 Serge Postrash
+ * @license     BSD 3-Clause, see LICENSE.md
  */
 
 namespace zyx\oy\fw\caching;
@@ -11,6 +11,7 @@ namespace zyx\oy\fw\caching;
 
 /**
  * Class FileCache
+ * @see https://github.com/yiisoft/yii2/issues/6809
  *
  * @package zyx\oy
  */

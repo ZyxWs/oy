@@ -1,1 +1,1 @@
-Overrides of [https://github.com/yiisoft/yii2/tree/master/extensions](https://github.com/yiisoft/yii2/tree/master/extensions)
+Overrides of extensions.

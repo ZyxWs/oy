@@ -1,9 +1,9 @@
 <?php
 /**
  * @author      Serge Postrash aka SDKiller <jexy.ru@gmail.com>
- * @link https://github.com/ZyxWs/oy
- * @copyright Copyright (c) 2014 Serge Postrash
- * @license BSD 3-Clause, see LICENSE.md
+ * @link        https://github.com/ZyxWs/oy
+ * @copyright   Copyright (c) 2014 Serge Postrash
+ * @license     BSD 3-Clause, see LICENSE.md
  */
 
 namespace zyx\oy\fw\web;
