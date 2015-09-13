@@ -17,10 +17,10 @@ use yii\helpers\Inflector;
  * @package zyx\oy\fw\base
  *
  * Stubs for autocomplete - these methods are implemented in Yii core classes:
- * @method attributes()
- * @method scenarios()
- * @method getScenario()
- * @method formName()
+ * @method \yii\base\Model::attributes()
+ * @method \yii\base\Model::scenarios()
+ * @method \yii\base\Model::getScenario()
+ * @method \yii\base\Model::formName()
  */
 trait ModelTrait
 {
