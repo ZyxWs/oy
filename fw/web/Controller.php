@@ -80,4 +80,49 @@ class Controller extends \yii\web\Controller
 
         Yii::$app->response->format = $format;
     }
+
+    /**
+     * Set a single view parameter from controller action.
+     * @param string $name
+     * @param mixed  $value
+     */
+    public function assignViewParam($name, $value)
+    {
+        $this->getView()->params[$name] = $value;
+    }
+
+    /**
+     * Set multiple view parameters from controller action.
+     * @param array $params
+     */
+    public function assignViewParams($params)
+    {
+        foreach ($params as $name => $value) {
+            $this->assignViewParam($name, $value);
+        }
+    }
+
+    /**
+     * Get a single view parameter from controller action.
+     * @param string $name
+     * @param mixed  $default
+     * @return mixed|null
+     */
+    public function fetchViewParam($name, $default = null)
+    {
+        $params = $this->getView()->params;
+
+        return isset($params[$name]) ? $params[$name] : $default;
+    }
+
+    /**
+     * Get all view parameters from controller action.
+     * @return array
+     */
+    public function fetchViewParams()
+    {
+        $params = $this->getView()->params;
+
+        return empty($params) ? [] : $params;
+    }
 }
