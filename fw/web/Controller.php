@@ -35,7 +35,7 @@ class Controller extends \yii\web\Controller
      */
     public function responseHtml()
     {
-        $this->setResponseFormat(Response::FORMAT_JSON);
+        $this->setResponseFormat(Response::FORMAT_HTML);
     }
 
     /**

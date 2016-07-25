@@ -2,7 +2,7 @@
 /**
  * @author      Serge Postrash aka SDKiller <jexy.ru@gmail.com>
  * @link        https://github.com/ZyxWs/oy
- * @copyright   Copyright (c) 2014 Serge Postrash
+ * @copyright   Copyright (c) 2014-2015 Serge Postrash
  * @license     BSD 3-Clause, see LICENSE.md
  */
 
@@ -38,6 +38,8 @@ trait ModelTrait
      */
     public function setFormName($name)
     {
+        $name = ($name === false) ? '' : $name;
+
         $this->formName = $name;
     }
 
@@ -46,7 +48,7 @@ trait ModelTrait
      */
     public function generateFormName()
     {
-        if (empty($this->formName) || !is_string($this->formName)) {
+        if ($this->formName === null || !is_string($this->formName)) {
             $reflector = new \ReflectionClass($this);
             $this->formName = $reflector->getShortName();;
         }
