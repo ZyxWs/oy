@@ -1,9 +1,9 @@
 <?php
 /**
- * @author      Serge Postrash aka SDKiller <admin@yiisoft.ru>
- * @link        http://yiisoft.ru
- * @copyright   Copyright (c) 2015 YiiSoft.ru
- * @license     http://yiisoft.ru/licenses/commercial
+ * @author      Serge Postrash aka SDKiller <jexy.ru@gmail.com>
+ * @link        https://github.com/ZyxWs/oy
+ * @copyright   Copyright (c) 2014-2017 Serge Postrash
+ * @license     BSD 3-Clause, see LICENSE.md
  */
 
 namespace zyx\oy\fw\web;
@@ -12,7 +12,6 @@ use Yii;
 use yii\base\InvalidCallException;
 use yii\base\InvalidParamException;
 use yii\web\Response;
-
 
 /**
  * Class Controller

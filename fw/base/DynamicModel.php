@@ -2,14 +2,13 @@
 /**
  * @author      Serge Postrash aka SDKiller <jexy.ru@gmail.com>
  * @link        https://github.com/ZyxWs/oy
- * @copyright   Copyright (c) 2014-2015 Serge Postrash
+ * @copyright   Copyright (c) 2014-2017 Serge Postrash
  * @license     BSD 3-Clause, see LICENSE.md
  */
 
 namespace zyx\oy\fw\base;
 
 use Yii;
-
 
 /**
  * Class DynamicModel
@@ -18,7 +17,6 @@ use Yii;
 class DynamicModel extends \yii\base\DynamicModel
 {
     use ModelTrait;
-
 
     /**
      * Returns the list of attribute names (model public properties along with `$_attributes` array members).
@@ -55,5 +53,4 @@ class DynamicModel extends \yii\base\DynamicModel
     {
         return $this->generateFormName();
     }
-
 }

@@ -2,7 +2,7 @@
 /**
  * @author      Serge Postrash aka SDKiller <jexy.ru@gmail.com>
  * @link        https://github.com/ZyxWs/oy
- * @copyright   Copyright (c) 2014-2015 Serge Postrash
+ * @copyright   Copyright (c) 2014-2017 Serge Postrash
  * @license     BSD 3-Clause, see LICENSE.md
  */
 
@@ -10,7 +10,6 @@ namespace zyx\oy\fw\db;
 
 use Yii;
 use zyx\oy\fw\base\ModelTrait;
-
 
 /**
  * Class ActiveRecord
@@ -83,5 +82,4 @@ class ActiveRecord extends \yii\db\ActiveRecord
 
         return (int) $q->count();
     }
-
 }

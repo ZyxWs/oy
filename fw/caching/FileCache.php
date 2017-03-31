@@ -2,7 +2,7 @@
 /**
  * @author      Serge Postrash aka SDKiller <jexy.ru@gmail.com>
  * @link        https://github.com/ZyxWs/oy
- * @copyright   Copyright (c) 2014-2015 Serge Postrash
+ * @copyright   Copyright (c) 2014-2017 Serge Postrash
  * @license     BSD 3-Clause, see LICENSE.md
  */
 
@@ -34,5 +34,4 @@ class FileCache extends \yii\caching\FileCache
 
         return parent::set($key, $value, $duration, $dependency);
     }
-
 }

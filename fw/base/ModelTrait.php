@@ -2,7 +2,7 @@
 /**
  * @author      Serge Postrash aka SDKiller <jexy.ru@gmail.com>
  * @link        https://github.com/ZyxWs/oy
- * @copyright   Copyright (c) 2014-2015 Serge Postrash
+ * @copyright   Copyright (c) 2014-2017 Serge Postrash
  * @license     BSD 3-Clause, see LICENSE.md
  */
 
@@ -10,7 +10,6 @@ namespace zyx\oy\fw\base;
 
 use Yii;
 use yii\helpers\Inflector;
-
 
 /**
  * Trait ModelTrait
@@ -108,5 +107,4 @@ trait ModelTrait
 
         return $labels;
     }
-
 }
