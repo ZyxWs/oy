@@ -10,6 +10,7 @@ namespace zyx\oy\fw\base;
 
 use Yii;
 use yii\helpers\Inflector;
+use yii\helpers\Html;
 
 /**
  * Trait ModelTrait
@@ -106,5 +107,20 @@ trait ModelTrait
         }
 
         return $labels;
+    }
+
+    /**
+     * Output model errors in suitable format for yii.activeForm.js
+     * @return array
+     */
+    public function formatErrors()
+    {
+        $errors = [];
+        foreach ($this->getErrors() as $attribute => $attrErrors) {
+            /** @var \yii\base\Model $this */
+            $errors[Html::getInputId($this, $attribute)] = $attrErrors;
+        }
+
+        return $errors;
     }
 }
