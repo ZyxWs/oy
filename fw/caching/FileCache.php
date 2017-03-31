@@ -8,30 +8,14 @@
 
 namespace zyx\oy\fw\caching;
 
-
 /**
  * Class FileCache
- * @see https://github.com/yiisoft/yii2/issues/6809
+ * Initially was implemented to resolve upstream issue #6809 with default cache duration.
+ * As this feature was implemented in Yii since 2.0.11, this class is left to keep BC.
+ * @see     https://github.com/yiisoft/yii2/issues/6809
  *
  * @package zyx\oy
  */
 class FileCache extends \yii\caching\FileCache
 {
-    /**
-     * @var int Application-wide value of cache duration (to keep BC defaults to 0 - that means never expire)
-     */
-    public $defaultDuration = 0;
-
-
-    /**
-     * @inheritdoc
-     */
-    public function set($key, $value, $duration = null, $dependency = null)
-    {
-        if ($duration === null) {
-            $duration = $this->defaultDuration;
-        }
-
-        return parent::set($key, $value, $duration, $dependency);
-    }
 }
